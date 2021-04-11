@@ -44,14 +44,14 @@ function nextSlide(e) {
 }
 
 function prevSlide(e) {
-    if(m < 0){
-        m = 3
+    if(m <= 0){
+        m = 4
     }
-    if(s1 < 0){
-        s1 = 3
+    if(s1 <= 0){
+        s1 = 4
     }
-    if(s2 < 0){
-        s2 = 3
+    if(s2 <= 0){
+        s2 = 4
     }
     const middleImg = middle.children[0]
     middleImg.src = images[(m - 1)%4]
